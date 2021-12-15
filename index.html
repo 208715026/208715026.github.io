@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="hello" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+</head>
+<body style="background-color: aliceblue;">
+    <h1>Ruh Ordo</h1>
+    <p id="text">Welcome to Ruh Ordo in Yssyk-Kul</p>
+    <img id="photo" src="img/Ruh ordo.jpg" height="400">
+    <br>
+    <button onclick="change()">Next</button>
+
+    <script>
+        function change(){
+            document.getElementById("photo").src="tashrabat.jpg"
+            document.getElementById("tema").innerHTML="Tash rabat"
+            document.getElementById("text").innerHTML="Welcome to Tash Rabat"
+            document.getElementById("text").style.color="blew"
+            document.body.style.background="wheat";
+        }
+    </script>
+
+    <button onclick="back()">Back</button>
+
+    <script>
+        function back(){
+            document.getElementById("photo").src="ruhordo.jpg"
+            document.getElementById("tema").innerHTML="Ruh ordo"
+            document.getElementById("text").innerHTML="Welcome to Ruh Ordo"
+            document.getElementById("text").style.color="blew"
+            document.body.style.background="wheat";
+        }
+    </script>
+    <h1 id="counter">0</h1>
+    <button onclick="plus()" style="width: 200px; height: 40px; color: white;background-color: rgb(87, 180, 25);">Add person reservetion</button>
+    <script>
+        var c=0
+        function plus(){
+           c++; //c=c+1
+           document.getElementById("counter").innerHTML=c;
+        }
+    </script>
+     <button onclick="minus()" style="width: 200px; height: 40px; color: white;background-color: rgb(24, 202, 0);">Delete person reservetion</button>
+     <script>
+        function minus(){
+            c--;
+            document.getElementById("counter").innerHTML=c;
+        }
+    </script>
+
+</body>
+</html>
+
